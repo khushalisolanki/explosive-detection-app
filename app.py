@@ -3,7 +3,7 @@ from utils import process_data, add_slope, plot_raw, plot_slope, detect_explosiv
 
 st.set_page_config(layout="wide")
 
-st.title("Gas Sensor Intelligence Dashboard")
+st.title("Explosive Sensor Intelligence Dashboard")
 
 # Upload CSV
 uploaded_file = st.file_uploader("Upload Sensor CSV", type="csv")
@@ -50,3 +50,4 @@ if uploaded_file:
     # Data preview
     st.subheader("Data Preview")
     st.dataframe(df.head())
+
